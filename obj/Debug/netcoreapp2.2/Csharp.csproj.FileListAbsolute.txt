@@ -1,0 +1,11 @@
+C:\Users\ambro\Desktop\PractiseInteviews\Csharp\bin\Debug\netcoreapp2.2\Csharp.deps.json
+C:\Users\ambro\Desktop\PractiseInteviews\Csharp\bin\Debug\netcoreapp2.2\Csharp.runtimeconfig.json
+C:\Users\ambro\Desktop\PractiseInteviews\Csharp\bin\Debug\netcoreapp2.2\Csharp.runtimeconfig.dev.json
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\bin\Debug\netcoreapp2.2\Csharp.dll
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\bin\Debug\netcoreapp2.2\Csharp.pdb
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\obj\Debug\netcoreapp2.2\Csharp.csprojAssemblyReference.cache
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\obj\Debug\netcoreapp2.2\Csharp.csproj.CoreCompileInputs.cache
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\obj\Debug\netcoreapp2.2\Csharp.AssemblyInfoInputs.cache
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\obj\Debug\netcoreapp2.2\Csharp.AssemblyInfo.cs
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\obj\Debug\netcoreapp2.2\Csharp.dll
+c:\Users\ambro\Desktop\PractiseInteviews\Csharp\obj\Debug\netcoreapp2.2\Csharp.pdb
