@@ -13,7 +13,7 @@ namespace Csharp
             // System.Console.WriteLine(reverseStrDollarSign.reverseSTR("dc,b$a"));
             // TwoSum.TwoSum2(arr,9);
             // ReverseString.ReverseSTR1("Hi My name is Andrei");
-            ContainDup.ContainDuplicate(arr);
+            System.Console.WriteLine(Containduplicate.good(arr));
         }
     }
 }
