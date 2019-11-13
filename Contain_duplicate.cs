@@ -24,7 +24,9 @@ namespace Csharp
         if (!myset.Contains(nums[i]))
         {
           myset.Add(nums[i]);
-        } else {
+        } 
+        else
+        {
           return true;
         }
       }
