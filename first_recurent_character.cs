@@ -49,7 +49,7 @@ namespace Csharp
         {
           myset.Add(nums[i]);
         } else{
-          return nums[i];
+          return nums[i];:::
         }
       }
       return 0000;
