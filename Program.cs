@@ -14,8 +14,9 @@ namespace Csharp
             // TwoSum.TwoSum2(arr,9);
             // ReverseString.ReverseSTR1("Hi My name is Andrei");
             // recurent_character.setversion(arr);
-            Node mynode = new Node();
-            System.Console.WriteLine(mynode.value);
+            Node mynode = new Node(5);
+            Console.WriteLine(mynode.value);
+            Console.WriteLine(mynode.next);
         }
     }
 }
