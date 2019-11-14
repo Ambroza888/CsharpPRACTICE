@@ -20,12 +20,12 @@ namespace Csharp
     }
   }
   // STACK
-  class Stack
+  class VesoStack
   {
     public Node top;
     public Node bottom;
     public int length;
-    public Stack()
+    public VesoStack()
     {
       top = null;
       bottom = null;
@@ -33,7 +33,12 @@ namespace Csharp
     }
     public void peek()
     {
-      Console.WriteLine(this.top.value);
+      Node n1 = this.top;
+      Node n2 = n1.next;
+      Node n3 = n2.next;
+      Console.WriteLine(n1.value);
+      Console.WriteLine(n2.value);
+      Console.WriteLine(n3.value);
     }
     public void push(int value)
     {
@@ -45,7 +50,7 @@ namespace Csharp
       } else {
         Node holdingPointer = this.top;
         this.top = newNode;
-        this.top.next = holdingPointer;
+        newNode.next = holdingPointer;
       }
       length++;
     }
