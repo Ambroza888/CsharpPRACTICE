@@ -14,7 +14,7 @@ namespace Csharp
       {
         if (!dict.ContainsKey(nums[i]))
         {
-          dict.Add(nums[i], 1)
+          dict.Add(nums[i], 1);
         }
         else
         {
