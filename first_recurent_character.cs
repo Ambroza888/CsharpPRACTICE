@@ -14,7 +14,7 @@ namespace Csharp
       {
         if (!dict.ContainsKey(nums[i]))
         {
-          dict.Add(nums[i], 1);
+          dict.Add(nums[i], 1)
         }
         else
         {
@@ -49,7 +49,7 @@ namespace Csharp
         {
           myset.Add(nums[i]);
         } else{
-          return nums[i];:::
+          return nums[i];
         }
       }
       return 0000;
