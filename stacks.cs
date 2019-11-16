@@ -54,5 +54,16 @@ namespace Csharp
       }
       length++;
     }
+    public void pop()
+    {
+      // this.bottom == 0 means that we don't want the bottom part be be === to the lost node;
+      if (length == 0)
+      {
+        this.bottom = null;
+      }
+      Node holdingPointer = this.top;
+      this.top = this.top.next;
+      length--;
+    }
   }
 }
