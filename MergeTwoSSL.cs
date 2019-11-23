@@ -13,7 +13,7 @@ namespace Csharp
 
   class MergeTwoLists
   {
-    public void Solution(ListNode l1, ListNode l2)
+    public static ListNode Solution(ListNode l1, ListNode l2)
     {
       ListNode DummyNode = new ListNode(0);
       ListNode curr = DummyNode;
@@ -33,6 +33,15 @@ namespace Csharp
         }
         curr = curr.next;
       }
+      if(p1 !=null)
+      {
+        curr.next = p1;
+      }
+      else
+      {
+        curr.next = p2;
+      }
+      return DummyNode.next;
     }
   }
 }
