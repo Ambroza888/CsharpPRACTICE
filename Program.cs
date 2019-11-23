@@ -9,27 +9,17 @@ namespace Csharp
         {
             int[] arr = {1,2,3,4,5,6,7,10,8};
             int[] arr2 = {1,2,3};
-            // TwoSum.TwosumO(arr,9);
-            // System.Console.WriteLine(revINT.reverseINT(12345));
-            // System.Console.WriteLine(reverseStrDollarSign.reverseSTR("dc,b$a"));
-            // TwoSum.TwoSum2(arr,9);
-            // ReverseString.ReverseSTR1("Hi My name is Andrei");
-            // recurent_character.setversion(arr
-            // RemoveOuter.o("(()())(())");
-            // RemoveOuter.o("(()())(())(()(()))");
             string[] t = {"gin","zen","gig","msg"};
-            // ListNode note1 = new ListNode(5);
-            // ListNode note2 = new ListNode(50);
-            // ListNode note3 = new ListNode(500);
-            // ListNode note4 = new ListNode(5000);
-            // ListNode note5 = new ListNode(50000);
-            // ListNode note6 = new ListNode(500000);
-            // note1.next = note2;
-            // note2.next = note3;
-            // note4.next = note5;
-            // note5.next = note6;
-            // MergeTwoLists.Solution(note1, note4);
-            FindPeakElement.solution(arr);
+            BinarySearchTree yo = new BinarySearchTree();
+            yo.insert(9);
+            yo.insert(4);
+            yo.insert(6);
+            yo.insert(20);
+            yo.insert(170);
+            yo.insert(15);
+            foreach(var i in yo){System.Console.WriteLine(i);}
+
+
             
         }
     }

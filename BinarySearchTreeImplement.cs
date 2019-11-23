@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Csharp
 {
-  class TreeNode 
+  public class TreeNode 
   {
     public int value;
     public TreeNode left;
@@ -16,11 +16,11 @@ namespace Csharp
       value = x;
     }
   }
-  class BinarySearchTree
+  public class BinarySearchTree
   {
-    public static TreeNode root;
-    BinarySearchTree(){ root = null;}
-    public static void insert(int value)
+    public TreeNode root;
+    public BinarySearchTree(){ root = null;}
+    public void insert(int value)
     {
       TreeNode newNode = new TreeNode(value);
       if(root == null)
@@ -54,6 +54,24 @@ namespace Csharp
             }
           }
       }
+    }
+    public bool lookup(int value)
+    {
+      if(root == null) return false;
+        TreeNode curr = root;
+        while(curr != null)
+        {
+          if(value < curr.value)
+          {
+            curr = curr.left;
+          }
+          else if(value > curr.value)
+          {
+            curr = curr.right;
+          }
+          else if(value == curr.value) return true;
+        }
+        return false;
     }
   }
 }
