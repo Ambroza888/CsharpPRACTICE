@@ -27,6 +27,33 @@ namespace Csharp
       {
         root = newNode;
       }
+      else
+      {
+          TreeNode curr = root;
+          while(true)
+          {
+            if(value < curr.value)
+            {
+              //we go left
+              if(curr.left == null)
+              {
+                curr.left = newNode;
+                return;
+              }
+              curr = curr.left;
+            }
+            else
+            {
+                // we go right
+                if(curr.right == null)
+                {
+                  curr.right = newNode;
+                  return;
+                }
+                curr = curr.right;
+            }
+          }
+      }
     }
   }
 }
