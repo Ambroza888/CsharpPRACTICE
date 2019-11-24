@@ -20,7 +20,7 @@ namespace Csharp
         }
         else if( result > c)
         {
-          right++
+          right++;
         }
         else
         {
