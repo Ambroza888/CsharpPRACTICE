@@ -18,7 +18,7 @@ namespace Csharp
         {
           index = words[i][j] - 97;
           temp += morse[index];
-          int yo = 'd' - 97;
+          // int yo = 'd' - 97;
         }
         transformation.Add(temp);
         temp = "";

@@ -69,8 +69,13 @@ namespace Csharp
           {
             curr = curr.right;
           }
-          else if(value == curr.value) return true;
+          else if(value == curr.value) 
+          {
+            System.Console.WriteLine(true);
+            return true;
+          }
         }
+        System.Console.WriteLine(false);
         return false;
     }
   }

@@ -17,8 +17,8 @@ namespace Csharp
             yo.insert(20);
             yo.insert(170);
             yo.insert(15);
-            foreach(var i in yo){System.Console.WriteLine(i);}
-
+            yo.lookup(170);
+            System.Console.WriteLine((int)Math.Sqrt(5));
 
             
         }
