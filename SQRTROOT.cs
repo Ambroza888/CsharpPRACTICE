@@ -8,27 +8,24 @@ namespace Csharp
   {
     public static bool solution(int c)
     {
-      int left = 0;
-      int right = (int)Math.Sqrt(c);
-      while(left <= right)
+      int min = 0;
+      int max = (int)Math.Sqrt(c);
+      while(min <= max)
       {
-        int result = left * left + right * right;
-
-        if(result < c)
+        if((min * min) + (max * max) < c)
         {
-          left++;
+          min++;
         }
-        else if( result > c)
+        else if ( (min*min)+(max*max) > c)
         {
-          right++;
+          max--;
         }
         else
         {
-            return true;
+          return true;
         }
       }
       return false;
-
     }
   }
 }

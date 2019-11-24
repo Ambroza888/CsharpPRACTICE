@@ -18,7 +18,7 @@ namespace Csharp
             yo.insert(170);
             yo.insert(15);
             yo.lookup(170);
-            System.Console.WriteLine((int)Math.Sqrt(5));
+            SumSqrtRoot.solution(18);
 
             
         }
