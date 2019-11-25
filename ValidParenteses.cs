@@ -19,9 +19,9 @@ namespace Csharp
         {
             if(stack.Count == 0) return false;
             char curr = stack.Peek();
-            if(c == ')' && curr != '('
-            || c == '}' && curr != '}'
-            || c == ']' && curr != ']')
+            if(curr != '(' && c == ')'
+            || curr != '}' && c == '}'
+            || curr != ']' && c == ']' )
             {
               return false;
             }
