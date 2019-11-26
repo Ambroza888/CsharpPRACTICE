@@ -19,7 +19,7 @@ namespace Csharp
             yo.insert(15);
             yo.lookup(170);
             SumSqrtRoot.solution(18);
-            ValidParenteses.solution("((()))");
+            ValidParenteses.solution("((()");
 
             
         }

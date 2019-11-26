@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Zen3
+namespace Csharp
 {
   class IntersecArrayDupplycate
   {
