@@ -33,6 +33,7 @@ namespace Csharp
         {
           result.Add(left);
         }
+        left++;
       }
       return result;
     }
