@@ -8,17 +8,22 @@ namespace Csharp
   class myGraph
   {
     public int numberOfNodes;
-    public Dictionary<string,Array> adjacentList;
+    public Dictionary<string,List<string>> adjacentList;
     public myGraph()
     {
       numberOfNodes = 0;
-      adjacentList = new Dictionary<string, Array>();
+      adjacentList = new Dictionary<string, List<string>>();
     }
     public void addVertex(string node)
     {
-      string[] arr = new string[]{};
-      adjacentList[node] = arr;
+      List<string> list = new List<string>();
+      adjacentList[node] = list;
       numberOfNodes++;
+    }
+    public void addEdge(string node1, string node2)
+    {
+      adjacentList[node1].Add(node2);
+      adjacentList[node2].Add(node1);
     }
   }
 }
