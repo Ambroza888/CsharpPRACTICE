@@ -12,7 +12,7 @@ namespace Csharp
             string[] t = {"gin","zen","gig","msg"};
             SelfDividingNumbers.solution(100,122);
             System.Console.WriteLine(28%1);
-            PerfectNumber.solution(28);
+            PerfectNumber.optimalsolution(28);
 
 
             

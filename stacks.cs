@@ -3,17 +3,17 @@ using System.Collections.Generic;
 
 namespace Csharp
 {
-  // Node
-  class Node
+  // MyNode
+  class MyNode
   {
     public int value;
-    public Node next; 
-    public Node(int val)
+    public MyNode next; 
+    public MyNode(int val)
     {
       value = val;
       next = null;
     }
-    public Node()
+    public MyNode()
     {
       value = 0;
       next = null;
@@ -22,8 +22,8 @@ namespace Csharp
   // STACK
   class VesoStack
   {
-    public Node top;
-    public Node bottom;
+    public MyNode top;
+    public MyNode bottom;
     public int length;
     public VesoStack()
     {
@@ -33,35 +33,35 @@ namespace Csharp
     }
     public void peek()
     {
-      Node n1 = this.top;
-      Node n2 = n1.next;
-      Node n3 = n2.next;
+      MyNode n1 = this.top;
+      MyNode n2 = n1.next;
+      MyNode n3 = n2.next;
       Console.WriteLine(n1.value);
       Console.WriteLine(n2.value);
       Console.WriteLine(n3.value);
     }
     public void push(int value)
     {
-      Node newNode = new Node(value);
+      MyNode newMyNode = new MyNode(value);
       if (this.length == 0)
       {
-        this.top = newNode;
-        this.bottom = newNode;
+        this.top = newMyNode;
+        this.bottom = newMyNode;
       } else {
-        Node holdingPointer = this.top;
-        this.top = newNode;
-        newNode.next = holdingPointer;
+        MyNode holdingPointer = this.top;
+        this.top = newMyNode;
+        newMyNode.next = holdingPointer;
       }
       length++;
     }
     public void pop()
     {
-      // this.bottom == 0 means that we don't want the bottom part be be === to the lost node;
+      // this.bottom == 0 means that we don't want the bottom part be be === to the lost MyNode;
       if (length == 0)
       {
         this.bottom = null;
       }
-      Node holdingPointer = this.top;
+      MyNode holdingPointer = this.top;
       this.top = this.top.next;
       length--;
     }
