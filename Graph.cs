@@ -14,10 +14,11 @@ namespace Csharp
       numberOfNodes = 0;
       adjacentList = new Dictionary<string, Array>();
     }
-    public addVertex(string node)
+    public void addVertex(string node)
     {
       string[] arr = new string[]{};
       adjacentList[node] = arr;
+      numberOfNodes++;
     }
   }
 }
