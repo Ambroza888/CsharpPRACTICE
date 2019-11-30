@@ -7,13 +7,13 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            int[] arr = {1,2,3,4,5,6,7,10,8};
-            int[] arr2 = {1,2,3};
-            string[] t = {"gin","zen","gig","msg"};
-            SelfDividingNumbers.solution(100,122);
-            System.Console.WriteLine(28%1);
-            PerfectNumber.optimalsolution(28);
-            Fibonacci.fibonacciRecursive(9);
+            // int[] arr = {1,2,3,4,5,6,7,10,8};
+            // int[] arr2 = {1,2,3};
+            // string[] t = {"gin","zen","gig","msg"};
+            // SelfDividingNumbers.solution(100,122);
+            // System.Console.WriteLine(28%1);
+            // PerfectNumber.optimalsolution(28);
+            Fibonacci.fibIterative(5);
 
             
         }
