@@ -6,7 +6,9 @@ namespace Csharp
 {
   class Sorts
   {
+
     public static void BubbleSort(int[] arr)
+    // O(n^2) nested forloop
     {
       for(int i = 0; i < arr.Length;i++)
       {
@@ -23,11 +25,12 @@ namespace Csharp
     }
     public static void SelectionSort(int[] arr)
     {
+      // O(n^2) nested forloop
       for(int i = 0; i < arr.Length;i++)
       {
         int min = i;
         int temp = arr[i];
-        for(int j = i+1; j< arr.Length-1;j++)
+        for(int j = i+1; j< arr.Length;j++)
         {
           if(arr[j] < arr[min])
           {
@@ -36,6 +39,21 @@ namespace Csharp
         }
       arr[i] = arr[min];
       arr[min] = temp;
+      }
+    }
+    public static void InsertionSort(int[] arr)
+    {
+      int j, temp;
+      for(int i = 1; i <= arr.Length-1;i++)
+      {
+        temp = arr[i];
+        j = i-1;
+        while(j >= 0 && arr[j] > temp)
+        {
+          arr[j + 1] = arr[j];
+          j--;
+        }
+        arr[j + 1] = temp;
       }
     }
   }

@@ -13,8 +13,8 @@ namespace Csharp
             // SelfDividingNumbers.solution(100,122);
             // System.Console.WriteLine(28%1);
             // PerfectNumber.optimalsolution(28);
-            int[] yo = {5,4,3,2,1};
-           Sorts.BubbleSort(yo);
+            int[] yo = {4,3,2,1};
+           Sorts.InsertionSort(yo);
         }
     }
 }
