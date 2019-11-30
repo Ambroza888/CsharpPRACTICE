@@ -13,9 +13,7 @@ namespace Csharp
             // SelfDividingNumbers.solution(100,122);
             // System.Console.WriteLine(28%1);
             // PerfectNumber.optimalsolution(28);
-            Fibonacci.fibIterative(5);
-
-            
+            ReverseString.ReverseStringUsingStacks("hello");
         }
     }
 }

@@ -17,5 +17,34 @@ namespace Csharp
       foreach(var j in result){Console.WriteLine(j);}
       return result.ToString();
     }
+    public static void reverseString3(string str)
+    {
+      char[] s = str.ToCharArray();
+      int left = 0;
+      int right = s.Length-1;
+      char temp;
+      while(left< right)
+      {
+        temp = s[left];
+        s[left] = s[right];
+        s[right] = temp;
+        left++;
+        right--;
+      }
+    }
+    public static void ReverseStringUsingStacks(string str)
+    {
+      char[] s = str.ToCharArray();
+      Stack<char> mystack = new Stack<char>();
+      for (int i = 0; i < s.Length;i++)
+      {
+        mystack.Push(s[i]);
+      }
+      for(int i = 0; i < s.Length;i++)
+      {
+        s[i] = mystack.Pop();
+      }
+      foreach(var i in s){Console.Write(i);}
+    }
   }
 }
