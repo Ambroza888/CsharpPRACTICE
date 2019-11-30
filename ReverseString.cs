@@ -46,5 +46,23 @@ namespace Csharp
       }
       foreach(var i in s){Console.Write(i);}
     }
+    // -------------------------------------------------------------------------
+    // Recursive way to do it. O(2^n)
+    // -------------------------------------------------------------------------
+    public void RevStrRecursive(string str)
+    {
+      char[] s = str.ToCharArray();
+      HelpFRec(s, 0 , s.Length-1);
+    }
+    public static void HelpFRec(char[] s, int start , int end)
+    {
+      if(start < end)
+      {
+        char temp = s[start];
+        s[start] = s[end];
+        s[end] = temp;
+        HelpFRec(s, start+1, end-1);
+      }
+    }
   }
 }
