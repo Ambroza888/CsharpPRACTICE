@@ -77,12 +77,43 @@ namespace Csharp
 
       left = MergeSort(left);
       right = MergeSort(right);
+      // recursive call will split the list/array on small arrays all the way down to One element
+      // the way down that means i am touching every each element one time so that makes it O(n).
+      // going up is more simple operation like O(1).
+      //Creating Merge bringing them back to full sorted array i log
+      // Tottal time of complexiti O(n log n);
       return Merge(left,right);
     }
 
     public static List<int> Merge(List<int> left, List<int> right)
     {
-      
+      List<int> result = new List<int>();
+      int indexleft = 0;
+      int indexright = 0;
+      while(indexleft < left.Count && indexright < right.Count)
+      {
+        if(left[indexleft] < right[indexright])
+        {
+          result.Add(left[indexleft]);
+          indexleft++;
+        }
+        else
+        {
+            result.Add(right[indexright]);
+            indexright++;
+        }
+        if(indexleft < left.Count)
+        {
+          result.Add(left[indexleft]);
+          indexleft++;
+        }
+        if(indexright < right.Count)
+        {
+          result.Add(right[indexright]);
+          indexright++;
+        }
+      }
+      return result;
     }
   }
 }
