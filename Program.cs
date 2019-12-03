@@ -13,7 +13,7 @@ namespace Csharp
             // SelfDividingNumbers.solution(100,122);
             // System.Console.WriteLine(28%1);
             // PerfectNumber.optimalsolution(28);
-            int[] yo = {4,3,2,1};
+            int[] yo = {1,3,2,100,20,10,1};
            Sorts.InsertionSort(yo);
         }
     }

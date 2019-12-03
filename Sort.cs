@@ -56,5 +56,11 @@ namespace Csharp
         arr[j + 1] = temp;
       }
     }
+
+    // Merge Sort Divide and Conquer
+    // first i will create Mid index on which i will be spliting the beggining and end of the array.
+    // left ---> mid <----- right and keep doing that till get to One element in the array(recursion down to count === 1).
+    // lets do it.
+    public static 
   }
 }
