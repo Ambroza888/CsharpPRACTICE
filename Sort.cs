@@ -61,6 +61,28 @@ namespace Csharp
     // first i will create Mid index on which i will be spliting the beggining and end of the array.
     // left ---> mid <----- right and keep doing that till get to One element in the array(recursion down to count === 1).
     // lets do it.
-    public static 
+    public static List<int> MergeSort(List<int> unsorted)
+    {
+      if(unsorted.Count <= 1)
+      {
+        return unsorted;
+      } 
+      List<int> left = new List<int>();
+      List<int> right = new List<int>();
+
+      int mid = unsorted.Count/2;
+
+      for(int i = 0;i < mid; i ++) left.Add(unsorted[i]);
+      for(int i = mid; i < unsorted.Count; i ++) right.Add(unsorted[i]);
+
+      left = MergeSort(left);
+      right = MergeSort(right);
+      return Merge(left,right);
+    }
+
+    public static List<int> Merge(List<int> left, List<int> right)
+    {
+      
+    }
   }
 }
