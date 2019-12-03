@@ -90,7 +90,9 @@ namespace Csharp
       List<int> result = new List<int>();
       int indexleft = 0;
       int indexright = 0;
-      while(indexleft < left.Count && indexright < right.Count)
+      int leftLength = left.Count;
+      int righLength = right.Count;
+      while(indexleft < leftLength && indexright < righLength)
       {
         if(left[indexleft] < right[indexright])
         {
@@ -102,15 +104,21 @@ namespace Csharp
             result.Add(right[indexright]);
             indexright++;
         }
-        if(indexleft < left.Count)
+      }
+      if(indexleft < leftLength)
+      {
+        while(indexleft< leftLength)
         {
-          result.Add(left[indexleft]);
-          indexleft++;
+        result.Add(left[indexleft]);
+        indexleft++;
         }
-        if(indexright < right.Count)
+      }
+      if(indexright < righLength)
+      {
+        while(indexright < righLength)
         {
-          result.Add(right[indexright]);
-          indexright++;
+        result.Add(right[indexright]);
+        indexright++;
         }
       }
       return result;

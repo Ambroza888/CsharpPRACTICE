@@ -14,7 +14,10 @@ namespace Csharp
             // System.Console.WriteLine(28%1);
             // PerfectNumber.optimalsolution(28);
             int[] yo = {1,3,2,100,20,10,1};
-           Sorts.InsertionSort(yo);
+            int[] yo2 = {34,4,10,40};
+            List<int> mylist = new List<int>(yo);
+            List<int> mylist2 = new List<int>(yo2);
+            Sorts.MergeSort(mylist);
         }
     }
 }
