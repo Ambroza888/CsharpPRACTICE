@@ -84,18 +84,25 @@ namespace Csharp
     public void BreadthFirstSearch()
     {
       TreeNode currentNode = root;
-      // Q is keeping track of the parents while we accessing the childrens.
-      // Q is the reason BFS is not good for WIDE trees.
       Queue<TreeNode> myQ = new Queue<TreeNode>();
+      List<int> result = new List<int>();
 
-      //List will be the answer holder result.
-      List<TreeNode> mylist = new List<TreeNode>();
       myQ.Enqueue(currentNode);
 
       while(myQ.Count > 0)
       {
         currentNode = myQ.Dequeue();
+        result.Add(currentNode.value);
+        if(currentNode.left != null)
+        {
+          myQ.Enqueue(currentNode.left);
+        }
+        if(currentNode.right != null)
+        {
+          myQ.Enqueue(currentNode.right);
+        }
       }
+      foreach(var i in result){Console.Write($"{i},");}
     }
 
   }
