@@ -6,6 +6,11 @@ namespace Csharp
 {
   class Sorts
   {
+    // Algorithm  Time Compelxity           Space Complexity
+    //            Best / Average / Worst     
+    // Quicksort
+
+
     public static void BubbleSort(int[] arr)
     // O(n^2) nested forloop
     {
