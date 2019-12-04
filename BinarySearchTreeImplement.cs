@@ -104,6 +104,24 @@ namespace Csharp
       }
       foreach(var i in result){Console.Write($"{i},");}
     }
+    public List<int> BreadthFirstSearchRecursive(Queue<TreeNode> myQ, List<int> result)
+    {
+      if(myQ.Count == 0)
+      {
+        return result;
+      }
+      TreeNode currNode = myQ.Dequeue();
+      result.Add(currNode.value);
+      if(currNode.left != null)
+      {
+        myQ.Enqueue(currNode.left);
+      }
+      if(currNode.right !=null)
+      {
+        myQ.Enqueue(currNode.right);
+      }
+      return BreadthFirstSearchRecursive(myQ,result);
+    }
 
   }
 }

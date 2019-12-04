@@ -27,6 +27,10 @@ namespace Csharp
             tree.insert(15);
             tree.insert(1);
             tree.BreadthFirstSearch();
+            Queue<TreeNode> myQ = new Queue<TreeNode>();
+            myQ.Enqueue(tree.root);
+            List<int> result = new List<int>();
+            tree.BreadthFirstSearchRecursive(myQ, result);
         }
     }
 }
