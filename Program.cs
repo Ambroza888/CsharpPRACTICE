@@ -17,7 +17,7 @@ namespace Csharp
             int[] yo2 = {34,4,10,40};
             List<int> mylist = new List<int>(yo);
             List<int> mylist2 = new List<int>(yo2);
-            Sorts.MergeSort(mylist);
+            Sorts.MergeSort(mylist2);
         }
     }
 }

@@ -19,7 +19,10 @@ namespace Csharp
   public class BinarySearchTree
   {
     public TreeNode root;
-    public BinarySearchTree(){ root = null;}
+    public BinarySearchTree()
+    {
+      root = null;
+    }
     public void insert(int value)
     {
       TreeNode newNode = new TreeNode(value);
@@ -78,5 +81,10 @@ namespace Csharp
         System.Console.WriteLine(false);
         return false;
     }
+    public void BreadthFirstSearch()
+    {
+      TreeNode curr = root;
+    }
+
   }
 }

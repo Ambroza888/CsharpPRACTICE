@@ -6,7 +6,6 @@ namespace Csharp
 {
   class Sorts
   {
-
     public static void BubbleSort(int[] arr)
     // O(n^2) nested forloop
     {
@@ -43,6 +42,7 @@ namespace Csharp
     }
     public static void InsertionSort(int[] arr)
     {
+      // small data and almost sorted lists ---- SUPER FAST
       int j, temp;
       for(int i = 1; i <= arr.Length-1;i++)
       {
@@ -63,6 +63,8 @@ namespace Csharp
     // lets do it.
     public static List<int> MergeSort(List<int> unsorted)
     {
+      //it uses a lot of Space Complexity for that Quick is pref.
+
       if(unsorted.Count <= 1)
       {
         return unsorted;
