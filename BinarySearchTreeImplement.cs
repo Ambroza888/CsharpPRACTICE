@@ -81,6 +81,9 @@ namespace Csharp
         System.Console.WriteLine(false);
         return false;
     }
+    // -------------------------------------------------------------------------
+    // BreadthFirstSearch (BFS)
+    // -------------------------------------------------------------------------
     public void BreadthFirstSearch()
     {
       TreeNode currentNode = root;
@@ -122,6 +125,65 @@ namespace Csharp
       }
       return BreadthFirstSearchRecursive(myQ,result);
     }
+    // -------------------------------------------------------------------------
+    // DepthFirstSerach (DPS)
+    // -------------------------------------------------------------------------
+    public List<int> DPSInorder()
+    {
+      List<int> list = new List<int>();
+      return TraverseInOrder(root, list);
+    }
+        public List<int> DPSPPostorder()
+    {
+      List<int> list = new List<int>();
+      return TraversePostOrder(root, list);
+    }
+        public List<int> DPSPreorder()
+    {
+      List<int> list = new List<int>();
+      return TraversePostOrder(root, list);
+    }
 
+    public List<int> TraverseInOrder(TreeNode node, List<int> list)
+    {
+      if(node.left != null)
+      {
+        TraverseInOrder(node.left, list);
+      }
+      list.Add(node.value); 
+
+      if(node.right != null)
+      {
+        TraverseInOrder(node.right,list);
+      }
+      return list;
+    }
+    public List<int> TraversePostOrder(TreeNode node, List<int> list)
+    {
+      list.Add(node.value); 
+      if(node.left != null)
+      {
+        TraversePostOrder(node.left, list);
+      }
+      if(node.right != null)
+      {
+        TraversePostOrder(node.right,list);
+      }
+      return list;
+    }
+    public List<int> TraversePreOrder(TreeNode node, List<int> list)
+    {
+
+      if(node.left != null)
+      {
+        TraversePreOrder(node.left, list);
+      }
+      if(node.right != null)
+      {
+        TraversePreOrder(node.right,list);
+      }
+      list.Add(node.value); 
+      return list;
+    }
   }
 }
