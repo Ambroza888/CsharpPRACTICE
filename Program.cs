@@ -32,7 +32,7 @@ namespace Csharp
             // List<int> result = new List<int>();
             // tree.BreadthFirstSearchRecursive(myQ, result);
             int[] yo = {2,2,1,1,1,2,2};
-            ReverseArray.Reverse3(yo);
+            MajorityElements.Solution(yo);
         }
     }
 }
