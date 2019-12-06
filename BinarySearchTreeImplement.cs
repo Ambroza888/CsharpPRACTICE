@@ -126,7 +126,7 @@ namespace Csharp
       return BreadthFirstSearchRecursive(myQ,result);
     }
     // -------------------------------------------------------------------------
-    // DepthFirstSerach (DPS)
+    // DepthFirstSerach (D)
     // -------------------------------------------------------------------------
     public List<int> DPSInorder()
     {

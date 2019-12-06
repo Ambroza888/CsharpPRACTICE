@@ -21,16 +21,16 @@ namespace Csharp
     }
     public static void good(int[] nums, int k)
     {
-      int[] result = new int[nums.Length];
       int n = nums.Length;
+      int[] result = new int[n];
       for(int i = 0; i < n ; i++)
       {
         result[(i+k)%n] = nums[i];
       }
-      for(int j = 0 ; j < n ; j++)
-      {
-        nums[j] = result[j];
-      }
+      // for(int j = 0 ; j < n ; j++)
+      // {
+      //   nums[j] = result[j];
+      // }
     }
   }
 }

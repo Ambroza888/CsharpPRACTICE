@@ -18,19 +18,21 @@ namespace Csharp
             // List<int> mylist = new List<int>(yo);
             // List<int> mylist2 = new List<int>(yo2);
             // Sorts.MergeSort(mylist2);
-            BinarySearchTree tree = new BinarySearchTree();
-            tree.insert(9);
-            tree.insert(4);
-            tree.insert(6);
-            tree.insert(20);
-            tree.insert(170);
-            tree.insert(15);
-            tree.insert(1);
-            tree.BreadthFirstSearch();
-            Queue<TreeNode> myQ = new Queue<TreeNode>();
-            myQ.Enqueue(tree.root);
-            List<int> result = new List<int>();
-            tree.BreadthFirstSearchRecursive(myQ, result);
+            // BinarySearchTree tree = new BinarySearchTree();
+            // tree.insert(9);
+            // tree.insert(4);
+            // tree.insert(6);
+            // tree.insert(20);
+            // tree.insert(170);
+            // tree.insert(15);
+            // tree.insert(1);
+            // tree.BreadthFirstSearch();
+            // Queue<TreeNode> myQ = new Queue<TreeNode>();
+            // myQ.Enqueue(tree.root);
+            // List<int> result = new List<int>();
+            // tree.BreadthFirstSearchRecursive(myQ, result);
+            int[] yo = {2,2,1,1,1,2,2};
+            ReverseArray.Reverse3(yo);
         }
     }
 }
