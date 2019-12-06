@@ -31,8 +31,8 @@ namespace Csharp
             // myQ.Enqueue(tree.root);
             // List<int> result = new List<int>();
             // tree.BreadthFirstSearchRecursive(myQ, result);
-            int[] yo = {2,2,1,1,1,2,2};
-            MajorityElements.Solution(yo);
+            int[] yo = {1,1,1,3,3,2,2,2};
+            MajorityElements.ProblemLevel2(yo);
         }
     }
 }
