@@ -185,5 +185,36 @@ namespace Csharp
       list.Add(node.value); 
       return list;
     }
+
+    public bool ValidateBST()
+    {
+      if (root == null) return true;
+      Stack<TreeNode> mystack = new Stack<TreeNode>();
+
+      TreeNode current = root;
+      TreeNode previus = null;
+      while(true)
+      {
+        while(current != null)
+        {
+          mystack.Push(current);
+          current = current.left;
+        }
+        
+        if(mystack.Count == 0)
+        {
+          break;
+        }
+        current = mystack.Pop();
+
+        if(previus != null && previus.value >= current.value)
+        {
+          return false;
+        }
+        previus = current;
+        current = current.right;
+      }
+      return true;
+    }
   }
 }
