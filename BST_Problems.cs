@@ -30,5 +30,15 @@ namespace Csharp
       }
       return result;
     }
+
+    public bool ValidateBST(TreeNode root)
+    {
+      if (root == null) return true;
+      Stack<TreeNode> mystack = new Stack<TreeNode>();
+
+      TreeNode current = root;
+      TreeNode previus = null;
+      
+    }
   }
 }
