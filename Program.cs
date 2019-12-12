@@ -37,7 +37,8 @@ namespace Csharp
             BigOn.Summ(5);
             Fibonacci.fibIterative(5);
 
-            Dynamic_Programing.StockMarketMaster(arr);
+            // Dynamic_Programing.StockMarketMaster(arr);
+            Dynamic_Programing.ClimbStairs(5);
         }
     }
 }

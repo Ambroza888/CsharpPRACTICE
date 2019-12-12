@@ -12,9 +12,7 @@ namespace Csharp
       for(int i = str.Length-1 ; i >= 0;i--)
       {
         result.Add(str[i]);
-        System.Console.WriteLine(str[i]);
       }
-      foreach(var j in result){Console.WriteLine(j);}
       return result.ToString();
     }
     public static void reverseString3(string str)
