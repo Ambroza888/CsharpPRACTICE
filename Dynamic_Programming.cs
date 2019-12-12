@@ -58,7 +58,6 @@ namespace Csharp
       int second = 2;
       int result = 0;
       if(n < 3) return n;
-      
       for(int i = 3; i <= n; i++)
       {
         result = first+second;
