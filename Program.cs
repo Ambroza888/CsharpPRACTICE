@@ -26,6 +26,13 @@ namespace Csharp
             tree.insert(170);
             tree.insert(15);
             tree.insert(1);
+            tree.insert(192);
+            tree.insert(193);
+
+            //      9
+            //   4     20
+            // 1   6  15  170
+
             // tree.BreadthFirstSearch();
             // Queue<TreeNode> myQ = new Queue<TreeNode>();
             // myQ.Enqueue(tree.root);
@@ -36,9 +43,7 @@ namespace Csharp
             tree.ValidateBST();
             BigOn.Summ(5);
             Fibonacci.fibIterative(5);
-
-            // Dynamic_Programing.StockMarketMaster(arr);
-            Dynamic_Programing.ClimbStairs(5);
+            MaxDepthBSF.MaxDepth(tree.root);
         }
     }
 }
