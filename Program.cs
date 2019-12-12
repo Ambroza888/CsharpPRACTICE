@@ -34,6 +34,8 @@ namespace Csharp
             // int[] yo = {1,1,1,3,3,2,2,2};
             // MajorityElements.ProblemLevel2(yo);
             tree.ValidateBST();
+            BigOn.Summ(5);
+            Fibonacci.fibIterative(5);
         }
     }
 }

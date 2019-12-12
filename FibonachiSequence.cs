@@ -26,6 +26,5 @@ namespace Csharp
       }
       return result[n];
     }
-
   }
 }
