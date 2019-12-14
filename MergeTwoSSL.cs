@@ -25,11 +25,13 @@ namespace Csharp
         {
           curr.next = p1;
           p1 = p1.next;
+          curr = curr.next;
         }
         else
         {
             curr.next = p2;
             p2 = p2.next;
+            curr = curr.next;
         }
         curr = curr.next;
       }

@@ -7,7 +7,7 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            int[] arr = {7,1,5,3,6,4};
+            int[] arr = {1,0,0,4,0,5};
             // int[] arr2 = {1,2,3};
             // string[] t = {"gin","zen","gig","msg"};
             // SelfDividingNumbers.solution(100,122);
@@ -43,7 +43,7 @@ namespace Csharp
             tree.ValidateBST();
             BigOn.Summ(5);
             Fibonacci.fibIterative(5);
-            MaxDepthBSF.MaxDepth(tree.root);
+
         }
     }
 }
