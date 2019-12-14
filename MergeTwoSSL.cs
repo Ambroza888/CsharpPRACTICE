@@ -33,7 +33,6 @@ namespace Csharp
             p2 = p2.next;
             curr = curr.next;
         }
-        curr = curr.next;
       }
       if(p1 !=null)
       {
