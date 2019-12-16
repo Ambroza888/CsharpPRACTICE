@@ -43,6 +43,7 @@ namespace Csharp
             TittleToNumber.Solution("ZY");
             System.Console.WriteLine((int)'A');
             RomanToInt.Solution("XVIII");
+            Anagram.Solution("anagram","nagaram");
         }
     }
 }

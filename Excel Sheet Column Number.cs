@@ -8,6 +8,7 @@ namespace Csharp
   {
     public static int Solution(string s)
     {
+      
       var result = 0;
       int temp = 1;
       for ( int i = 0 ; i < s.Length; i++)
