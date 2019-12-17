@@ -44,6 +44,7 @@ namespace Csharp
             System.Console.WriteLine((int)'A');
             RomanToInt.Solution("XVIII");
             Anagram.Solution("anagram","nagaram");
+            FirstUniqueLetter.Solution("llleet");
         }
     }
 }
