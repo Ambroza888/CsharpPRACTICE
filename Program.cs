@@ -45,6 +45,9 @@ namespace Csharp
             RomanToInt.Solution("XVIII");
             Anagram.Solution("anagram","nagaram");
             FirstUniqueLetter.Solution("llleet");
+            double rr = 0.9;
+            int yoo = (int)rr;
+            System.Console.WriteLine(yoo);
         }
     }
 }
