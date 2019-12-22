@@ -46,7 +46,9 @@ namespace Csharp
             Anagram.Solution("anagram","nagaram");
             FirstUniqueLetter.Solution("llleet");
             int[] yo = {0,1,2,3};
-            MissingNumber.MissingN(yo);
+            // MissingNumber.MissingN(yo);
+            HappyNumber.HappyN(19);
+            PascalsTriangle.Solution(5);
         }
     }
 }
