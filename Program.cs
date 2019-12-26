@@ -49,8 +49,8 @@ namespace Csharp
             // MissingNumber.MissingN(yo);
             HappyNumber.HappyN(19);
             PascalsTriangle.Solution(5);
-            Climbing_Stairs.Solution(4);
-            
+            Climbing_Stairs.Solution(5);
+
         }
     }
 }

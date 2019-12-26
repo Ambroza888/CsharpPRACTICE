@@ -13,14 +13,15 @@ namespace Csharp
 
       int prePre = 1;
       int pre = 2;
+      int cur = 0;
 
       for(int i = 2; i < n; i ++)
       {
-        int cur = prePre + pre;
+        cur = prePre + pre;
         prePre = pre;
         pre = cur;
       }
-      return pre;
+      return cur;
     }
   }
 }
