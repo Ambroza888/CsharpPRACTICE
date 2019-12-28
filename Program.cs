@@ -19,16 +19,23 @@ namespace Csharp
             // List<int> mylist2 = new List<int>(yo2);
             // Sorts.MergeSort(mylist2);
             BinarySearchTree tree = new BinarySearchTree();
-            tree.insert(9);
-            tree.insert(4);
-            tree.insert(6);
-            tree.insert(20);
-            tree.insert(170);
-            tree.insert(15);
+            // tree.insert(9);
+            // tree.insert(4);
+            // tree.insert(6);
+            // tree.insert(20);
+            // tree.insert(170);
+            // tree.insert(15);
+            // tree.insert(1);
+            // tree.insert(192);
+            // tree.insert(193);
             tree.insert(1);
-            tree.insert(192);
-            tree.insert(193);
-
+            tree.insert(2);
+            tree.insert(2);
+            tree.insert(3);
+            tree.insert(4);
+            tree.insert(4);
+            tree.insert(3);
+            SymmetricTree.Solution(tree.root);
             //      9
             //   4     20
             // 1   6  15  170
@@ -40,17 +47,17 @@ namespace Csharp
             // tree.BreadthFirstSearchRecursive(myQ, result);
             // int[] yo = {1,1,1,3,3,2,2,2};
             // MajorityElements.ProblemLevel2(yo);
-            TittleToNumber.Solution("ZY");
-            System.Console.WriteLine((int)'A');
-            RomanToInt.Solution("XVIII");
-            Anagram.Solution("anagram","nagaram");
-            FirstUniqueLetter.Solution("llleet");
-            int[] yo = {0,1,2,3};
-            // MissingNumber.MissingN(yo);
-            HappyNumber.HappyN(19);
-            PascalsTriangle.Solution(5);
-            Climbing_Stairs.Solution(5);
-
+            // TittleToNumber.Solution("ZY");
+            // System.Console.WriteLine((int)'A');
+            // RomanToInt.Solution("XVIII");
+            // Anagram.Solution("anagram","nagaram");
+            // FirstUniqueLetter.Solution("llleet");
+            // int[] yo = {0,1,2,3};
+            // // MissingNumber.MissingN(yo);
+            // HappyNumber.HappyN(19);
+            // PascalsTriangle.Solution(5);
+            // Climbing_Stairs.Solution(5);
+            
         }
     }
 }
