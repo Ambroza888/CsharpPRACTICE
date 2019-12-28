@@ -57,6 +57,8 @@ namespace Csharp
             // HappyNumber.HappyN(19);
             // PascalsTriangle.Solution(5);
             // Climbing_Stairs.Solution(5);
+            int[] check = {4,3,2,100};
+            PlusOne.Solution(check);
             
         }
     }
