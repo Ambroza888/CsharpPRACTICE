@@ -37,6 +37,7 @@ namespace Csharp
       {
         return DFS(left.left,right.right) && DFS(left.right,right.left);
       }
+      return false;
     }
   }
 }
