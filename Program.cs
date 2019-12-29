@@ -57,11 +57,13 @@ namespace Csharp
             // HappyNumber.HappyN(19);
             // PascalsTriangle.Solution(5);
             // Climbing_Stairs.Solution(5);
-            int[] check = {4,3,2,1,3};
+            int[] check = {0,0,1,1,1,2,2,3,3,4};
             PlusOne.Solution(check);
             char[] a = {'a','b','c','d'};
             char[] b = {'e','h','f','q'};
+
             Contain_common_item.Solution2(a,b);
+            RemoveDuplicates.Solution(check);
             
         }
     }
