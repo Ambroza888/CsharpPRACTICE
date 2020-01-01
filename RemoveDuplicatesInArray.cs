@@ -16,7 +16,7 @@ namespace Csharp
       {
         if(nums[i - 1] == nums[i]) continue;
 
-        resultIndex = resultIndex + 1;
+        resultIndex++;
         nums[resultIndex] = nums[i];
       }
       return resultIndex +1;

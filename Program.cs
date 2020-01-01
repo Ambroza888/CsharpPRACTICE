@@ -64,6 +64,7 @@ namespace Csharp
 
             Contain_common_item.Solution2(a,b);
             RemoveDuplicates.Solution(check);
+            TrailingZeroes.Solution(5);
             
         }
     }
