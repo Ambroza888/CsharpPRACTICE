@@ -30,7 +30,17 @@ namespace Csharp
         MyNode temp = secondHead.next;
         secondHead.next = secondHead.next.next;
         temp.next = slow.next;
-        slow.
+        slow.next = temp;
+      }
+      // after reversing the second half we need to restart the SECONDHEAD back to the beggining of the second part fo we can compare the head1 =! head2
+      secondHead = slow.next;
+      
+      // comparing
+      while(secondHead != null)
+      {
+        if(secondHead.value != head.value) return false;
+        head = head.next;
+        secondHead = secondHead.next;
       }
       return true;
     }
