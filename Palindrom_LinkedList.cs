@@ -21,6 +21,17 @@ namespace Csharp
         slow = slow.next;
       }
       // assing "secondHead" that we can compaere later
+      // assinging secondHead to be == to slow. next to take care of odd/even problem of the nodes
+      MyNode secondHead = slow.next;
+      
+      // reversing Nodes
+      while(secondHead.next != null)
+      {
+        MyNode temp = secondHead.next;
+        secondHead.next = secondHead.next.next;
+        temp.next = slow.next;
+        slow.
+      }
       return true;
     }
   }
