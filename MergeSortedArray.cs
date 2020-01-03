@@ -71,5 +71,18 @@ namespace Csharp
         }
       }
     }
+    public static void MergeSortedArrayWhileLoops(int[] nums1, int m, int[] nums2, int n)
+    {
+      // input:
+      //nums1 = [1,2,3,0,0,0], m = 3
+      //nums2 = [2,5,6],       n = 3
+      //output: [1,2,2,3,4,5,6]
+
+
+      int i = m + n -1;
+      m -= 1;
+      m -= 1;
+
+    }
   }
 }
