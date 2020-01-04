@@ -65,6 +65,14 @@ namespace Csharp
             Contain_common_item.Solution2(a,b);
             RemoveDuplicates.Solution(check);
             ValidParenteses.solution("((()))");
+
+            List<int> t = new List<int>();
+            t.Add(1);
+            t.Add(200);
+            t.Add(100);
+            int yo = t[t.Count-1];
+            System.Console.WriteLine(yo);
+            // foreach(int i in t){System.Console.WriteLine(i);}
             
         }
     }
