@@ -41,10 +41,25 @@ namespace Csharp
       {
         while(diff > 0)
         {
-
+          rA = rA.next;
+          diff--;
         }
       }
+      else
+      {
+          while(diff > 0)
+          {
+            rB = rB.next;
+            diff--;
+          }
+      }
 
+      while(rA != null && rA != rB)
+      {
+        rA = rA.next;
+        rB = rB.next;
+      }
+      return rA;
     }
   }
 }
