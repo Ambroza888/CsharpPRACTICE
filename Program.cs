@@ -70,7 +70,6 @@ namespace Csharp
             t.Add(1);
             t.Add(200);
             t.Add(100);
-            t.ins
             int yo = t[t.Count-1];
             System.Console.WriteLine(yo);
             // foreach(int i in t){System.Console.WriteLine(i);}
