@@ -25,7 +25,30 @@ namespace Csharp
         }
       }
       return -1;
-      
+    }
+    public static int Solution2(string haystack, string needle)
+    {
+      if(needle.Length == 0) return 0;
+      if(needle.Length > haystack.Length) return -1;
+
+      int needleIndex = 0;
+      for(int i = 0; i < haystack.Length;i++)
+      {
+        if(haystack[i] == needle[needleIndex])
+        {
+          if(needleIndex == (needle.Length -1) ) 
+          {
+            return i - needleIndex;
+          }
+          needleIndex++;
+        }
+        else if( needleIndex != 0)
+        {
+          i = i - needleIndex;
+          needleIndex =  0;
+        }
+      }
+      return -1;
     }
   }
 }
