@@ -38,12 +38,16 @@ namespace Csharp
         {
           if(needleIndex == (needle.Length -1) ) 
           {
+            // return the index in haystack
             return i - needleIndex;
           }
           needleIndex++;
         }
         else if( needleIndex != 0)
         {
+          // I need to move the i back in the haystack.
+          // To check for a match starting from the next character.
+          // Example : [helllo], [llo];
           i = i - needleIndex;
           needleIndex =  0;
         }
