@@ -72,6 +72,7 @@ namespace Csharp
             t.Add(100);
             int yo = t[t.Count-1];
             System.Console.WriteLine(yo);
+            Implement_strStr.Solution("hellllo","hll");
             // foreach(int i in t){System.Console.WriteLine(i);}
             
         }
