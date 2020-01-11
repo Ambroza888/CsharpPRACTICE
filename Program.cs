@@ -74,6 +74,8 @@ namespace Csharp
             System.Console.WriteLine(yo);
             Implement_strStr.Solution2("llhellllo","llo");
             // foreach(int i in t){System.Console.WriteLine(i);}
+            int[] r = {7,6,5,4,3,2,1};
+            BubbleSort.Solution(r);
             
         }
     }
