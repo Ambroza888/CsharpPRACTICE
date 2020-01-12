@@ -5,12 +5,20 @@ namespace Csharp
 {
   class stak
   {
-    int top;
-    int[] stack;
+    public int top;
+    public int[] stack;
+    public int MAX = Int32.MaxValue;
     public stak()
     {
       top = -1;
-      stack = new int[Int32.MaxValue];
+      stack = new int[MAX];
+    }
+    public void Push(int val)
+    {
+      if(top >= MAX)
+      {
+        System.Console.WriteLine("Stack Overflow");
+      }
     }
   }
 }
