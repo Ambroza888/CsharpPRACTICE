@@ -19,6 +19,23 @@ namespace Csharp
       {
         System.Console.WriteLine("Stack Overflow");
       }
+      else
+      {
+          stack[++top] = val;
+      }
+    }
+    public int Pop()
+    {
+      if(top < 0)
+      {
+        System.Console.WriteLine("Stack Underflow");
+        return 0;
+      }
+      else
+      {
+      int val = stack[--top];
+        return val;
+      }
     }
   }
 }
