@@ -16,7 +16,14 @@ namespace Csharp
       {
         long mid = min + (max - min)/2;
         long candidate = mid * mid;
+        if(candidate == x) return (int)mid;
+        else if(candidate > x) max = mid;
+        else
+        {
+            min = mid+1;
+        }
       }
+      return (int)min -1;
     }
   }
 }
