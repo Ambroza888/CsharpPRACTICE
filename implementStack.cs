@@ -41,7 +41,7 @@ namespace Csharp
     {
       for(int i = top; i >= 0; i--)
       {
-        System.Console.WriteLine(i);
+        Console.WriteLine(stack[i]);
       }
     }
   }
