@@ -33,8 +33,15 @@ namespace Csharp
       }
       else
       {
-      int val = stack[--top];
+        int val = stack[--top];
         return val;
+      }
+    }
+    public void printstak()
+    {
+      for(int i = top; i >= 0; i--)
+      {
+        System.Console.WriteLine(i);
       }
     }
   }
