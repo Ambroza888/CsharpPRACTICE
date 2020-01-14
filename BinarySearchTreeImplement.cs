@@ -133,12 +133,12 @@ namespace Csharp
       List<int> list = new List<int>();
       return TraverseInOrder(root, list);
     }
-        public List<int> DPSPPostorder()
+    public List<int> DPSPPostorder()
     {
       List<int> list = new List<int>();
       return TraversePostOrder(root, list);
     }
-        public List<int> DPSPreorder()
+    public List<int> DPSPreorder()
     {
       List<int> list = new List<int>();
       return TraversePostOrder(root, list);

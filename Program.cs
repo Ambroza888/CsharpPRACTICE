@@ -76,11 +76,8 @@ namespace Csharp
             // foreach(int i in t){System.Console.WriteLine(i);}
             int[] r = {7,6,5,4,3,2,1};
             BubbleSort.Solution(r);
-            stak tt = new stak();
-            tt.Push(5);
-            tt.Push(4);
-            tt.Push(2);
-            tt.printstak();
+            MySquareRoot.Solution(10);
+
             
         }
     }
